@@ -1,0 +1,5 @@
+livre(#titre: varchar{unique}, image: bytea, date_parution: date, description: varchar, auteur: varchar => auteur, genre: enum, ISBN: varchar{unique, optional}, date_emprunt: date, edition: varchar{optional}, emprunter: integer => utilisateur)
+
+utilisateur(#id: integer{unique, autogenerate}, nom: varchar, nom_famille: varchar, statue: varchar, nombre_emprunt: integer) nombre_emprunt maximum a 10)
+
+Auteur(#UUID: varchar{unique}, nom: varchar, nom_famille: varchar, date_naissance: date{optional}, date_mort: date{optional}, courant: enum {optional})

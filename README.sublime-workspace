@@ -1,0 +1,900 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"th",
+				"this"
+			],
+			[
+				"noti",
+				"notif"
+			],
+			[
+				"En",
+				"EntityManagerInterface"
+			],
+			[
+				"Re",
+				"RegisterType"
+			],
+			[
+				"Use",
+				"User"
+			],
+			[
+				"Regis",
+				"RegisterType"
+			],
+			[
+				"sub",
+				"submit"
+			],
+			[
+				"re",
+				"required"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"h",
+				"Http"
+			],
+			[
+				"bg-cui",
+				"bg-cuisse-dark"
+			],
+			[
+				"bg-cuisse",
+				"bg-cuisse-columbia"
+			],
+			[
+				"text",
+				"text-cuisse-dark"
+			],
+			[
+				"recip",
+				"recipAdd"
+			],
+			[
+				"m-",
+				"my-2"
+			],
+			[
+				"shado",
+				"shadow-sm"
+			],
+			[
+				"sha",
+				"shadow-sm"
+			],
+			[
+				"text-",
+				"text-cuisse-paleCerulean"
+			],
+			[
+				"bg-cuiss",
+				"bg-cuisse-dark"
+			],
+			[
+				"rep",
+				"replaceAll"
+			],
+			[
+				"on",
+				"onclick"
+			],
+			[
+				"add",
+				"addSteps"
+			],
+			[
+				"T",
+				"TextareaType"
+			],
+			[
+				"json_",
+				"json_decode"
+			],
+			[
+				"rec",
+				"recip"
+			],
+			[
+				"data",
+				"data-counter"
+			],
+			[
+				"jso",
+				"json_encode"
+			],
+			[
+				"in",
+				"ingredient"
+			],
+			[
+				"Add",
+				"AddIngredientType"
+			],
+			[
+				"Tex",
+				"TextareaType"
+			],
+			[
+				"la",
+				"label"
+			],
+			[
+				"hea",
+				"header\tTag"
+			],
+			[
+				"colo",
+				"console.log"
+			],
+			[
+				"interconti",
+				"intercommunautaires"
+			],
+			[
+				"le",
+				"lenght"
+			],
+			[
+				"se",
+				"self"
+			],
+			[
+				"cmd",
+				"cmd_len"
+			],
+			[
+				"cm",
+				"cmd_len"
+			],
+			[
+				"l",
+				"lenght"
+			],
+			[
+				"i",
+				"if\tIf Condition"
+			],
+			[
+				"sel",
+				"selection"
+			],
+			[
+				"col",
+				"color\tproperty"
+			],
+			[
+				"grid",
+				"grid-template-columns\tproperty"
+			],
+			[
+				"fon",
+				"font-family\tproperty"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"tran",
+				"transition\tproperty"
+			],
+			[
+				"tex",
+				"text-transform\tproperty"
+			],
+			[
+				"border-r",
+				"border-radius\tproperty"
+			],
+			[
+				"bac",
+				"background-color\tproperty"
+			],
+			[
+				"wa",
+				"wave-small.png\tw:390 h:47"
+			],
+			[
+				"marg",
+				"margin\tproperty"
+			],
+			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
+				"ali",
+				"align-items\tproperty"
+			],
+			[
+				"flex",
+				"flex-direction\tproperty"
+			],
+			[
+				"border",
+				"border-bottom\tproperty"
+			],
+			[
+				"space",
+				"space-between\tjustify-content"
+			],
+			[
+				"just",
+				"justify-content\tproperty"
+			],
+			[
+				"al",
+				"align-items\tproperty"
+			],
+			[
+				"paddin",
+				"padding\tproperty"
+			],
+			[
+				"max-",
+				"max-width\tproperty"
+			],
+			[
+				"wi",
+				"width\tproperty"
+			],
+			[
+				"list",
+				"list-style\tproperty"
+			],
+			[
+				"margin",
+				"margin\tproperty"
+			],
+			[
+				"box",
+				"box-sizing\tproperty"
+			],
+			[
+				"he",
+				"header\tTag"
+			],
+			[
+				"mar",
+				"margin-top\tproperty"
+			],
+			[
+				"s",
+				"style"
+			],
+			[
+				"co",
+				"color\tproperty"
+			],
+			[
+				"li",
+				"link\tTag"
+			],
+			[
+				"nav",
+				"navbar"
+			],
+			[
+				"inl",
+				"inline\tdisplay"
+			],
+			[
+				"d",
+				"display\tproperty"
+			],
+			[
+				"te",
+				"text-align\tproperty"
+			],
+			[
+				"b",
+				"button\tTag"
+			],
+			[
+				"tra",
+				"transform\tproperty"
+			],
+			[
+				"gri",
+				"grid-area\tproperty"
+			],
+			[
+				"grid-t",
+				"grid-template-areas\tproperty"
+			],
+			[
+				"r",
+				"rows\tAttr"
+			],
+			[
+				"f",
+				"form\tTag"
+			],
+			[
+				"met",
+				"meta\tTag"
+			],
+			[
+				"me",
+				"meta\tTag"
+			],
+			[
+				"borde",
+				"border-collapse\tproperty"
+			],
+			[
+				"u",
+				"uppercase\ttext-transform"
+			],
+			[
+				"ca",
+				"colspan\tAttr"
+			],
+			[
+				"t",
+				"td\tTag"
+			],
+			[
+				"fle",
+				"flex\tdisplay"
+			],
+			[
+				"tax",
+				"text-align\tproperty"
+			],
+			[
+				"pa",
+				"padding\tproperty"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"background-c",
+				"background-color\tproperty"
+			],
+			[
+				"font-",
+				"font-style\tproperty"
+			],
+			[
+				"fav",
+				"fav-items"
+			],
+			[
+				"true",
+				"true"
+			],
+			[
+				"rea",
+				"Read"
+			],
+			[
+				"New",
+				"NewReader"
+			],
+			[
+				"strin",
+				"strings"
+			],
+			[
+				"C",
+				"ChannelID"
+			],
+			[
+				"cha",
+				"ChannelId"
+			],
+			[
+				"Cha",
+				"ChannelMessageSend"
+			],
+			[
+				"To",
+				"ToLower"
+			],
+			[
+				"ma",
+				"magique"
+			],
+			[
+				"ar",
+				"abris"
+			],
+			[
+				"v",
+				"voyez"
+			],
+			[
+				"bra",
+				"brainfuckChiffrement"
+			],
+			[
+				"E",
+				"EndOfHistory"
+			],
+			[
+				"en",
+				"EndOfHistory"
+			],
+			[
+				"wo",
+				"word"
+			],
+			[
+				"wor",
+				"wordBuffer"
+			],
+			[
+				"word",
+				"wordBuffer"
+			],
+			[
+				"empla",
+				"emplacement"
+			],
+			[
+				"magi",
+				"magicPhrase"
+			],
+			[
+				"emp",
+				"emplacementTwo"
+			],
+			[
+				"fo",
+				"forp\tfor k,v in pairs()"
+			],
+			[
+				"for",
+				"forp\tfor k,v in pairs()"
+			],
+			[
+				"emplacementT",
+				"emplacementTwo"
+			],
+			[
+				"e",
+				"emplacement"
+			],
+			[
+				"dif",
+				"difEmplacement"
+			],
+			[
+				"empl",
+				"emplacement"
+			],
+			[
+				"em",
+				"emplacementTwo"
+			],
+			[
+				"the",
+				"then"
+			],
+			[
+				"y",
+				"yPosBeta"
+			],
+			[
+				"x",
+				"xPosBeta"
+			],
+			[
+				"dra",
+				"drawCircleWIP"
+			],
+			[
+				"mode",
+				"modem_message"
+			],
+			[
+				"lo",
+				"looc"
+			],
+			[
+				"tu",
+				"turtle"
+			],
+			[
+				"loc",
+				"locate"
+			],
+			[
+				"turn",
+				"turnLeft"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 462,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"nppm",
+				"npm: List Installed Packages"
+			],
+			[
+				"",
+				"Nodejs::User File Settings"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 227.0,
+		"history":
+		[
+			"subprocess.Popen(\"npm init\", shell=True, stdout=subprocess.PIPE).stdout.read()",
+			"print(subprocess.Popen(\"npm init\", shell=True, stdout=subprocess.PIPE).stdout.read())",
+			"subprocess.Popen([\"npm\", \"init\"])",
+			"subprocess.Popen()",
+			"subprocess.run(\"npm init\")",
+			"import subprocess ",
+			"python",
+			"lua",
+			"npm",
+			"npm init",
+			"dsfq",
+			"view.run_command(\"licorne\")",
+			"view.run_command(\"plug.py\")",
+			"view.run_command(\"monplugin.plug\")",
+			"view.run_command(\"plug\")",
+			"plug",
+			"view.run_command(\"plug\")",
+			"example_command",
+			"view.run_command(\"plug\")",
+			"view.run_command(\"plug.py\")",
+			"view.run_command(\"monplugin.plug\")",
+			"view.run_command(\"plug.py\")",
+			"view.run_command(\"plug\")",
+			"view.run_command(\"plug.py\")",
+			"view.run_command(\"monplugin.plug\")",
+			"view.run_command(\"monplugin\")",
+			"view.run_command(\"plug\")",
+			"npm",
+			"Package Control.sublime-package",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + ",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/B/gitLibrary/mediatheque"
+	],
+	"file_history":
+	[
+		"/C/Users/lokki/Downloads/ECF-Mediatheque-Enonce_2.pdf",
+		"/C/Users/lokki/Downloads/MaCollectionManga_30-09-2021.csv",
+		"/B/gitLibrary/cuisneApp/templates/base.html.twig",
+		"/B/gitLibrary/cuisneApp/src/Controller/SecurityController.php",
+		"/B/gitLibrary/cuisneApp/src/Controller/admin/DashboardController.php",
+		"/B/gitLibrary/cuisneApp/config/packages/security.yaml",
+		"/B/gitLibrary/cuisneApp/src/Controller/Admin/RecipCrudController.php",
+		"/B/gitLibrary/cuisneApp/templates/recipice/index.html.twig",
+		"/B/gitLibrary/cuisneApp/templates/home/index.html.twig",
+		"/B/gitLibrary/cuisneApp/src/Form/AddRecipType.php",
+		"/B/gitLibrary/cuisneApp/tailwind.config.js",
+		"/B/gitLibrary/cuisneApp/src/Form/AddIngredientType.php",
+		"/B/gitLibrary/foxylabV2/my-app/tailwind.config.js",
+		"/B/gitLibrary/cuisneApp/src/Entity/Recip.php",
+		"/B/gitLibrary/cuisneApp/src/Controller/HomeController.php",
+		"/B/gitLibrary/cuisneApp/src/Entity/Ingredient.php",
+		"/B/gitLibrary/cuisneApp/.env",
+		"/C/Users/lokki/Desktop/web/gotest/index.html",
+		"/B/gitLibrary/foxylabV2/my-app/src/view/Home/index.js",
+		"/B/gitLibrary/foxylabV2/my-app/src/component/HeaderBanner/index.js",
+		"/B/gitLibrary/foxylab/templates/victorious/event.html.twig",
+		"/B/gitLibrary/foxylab/templates/home/index.html.twig",
+		"/B/gitLibrary/foxylab/templates/base.html.twig",
+		"/B/gitLibrary/test.js",
+		"/C/Users/lokki/Desktop/web/final.html",
+		"/B/gitLibrary/foxylabV2/my-app/src/component/HeaderBlockLink/index.js",
+		"/B/gitLibrary/cuisneApp/postcss.config.js",
+		"/B/gitLibrary/cuisneApp/assets/styles/app.css",
+		"/B/gitLibrary/cuisneApp/webpack.config.js",
+		"/B/gitLibrary/cuisneApp/package.json",
+		"/B/gitLibrary/cuisneApp/public/assets/css/style.css",
+		"/B/gitLibrary/foxylabV2/my-app/src/component/MobileBlockLink/index.js",
+		"/B/gitLibrary/foxylabV2/foxylabSynfo/src/Controller/HomeController.php",
+		"/B/gitLibrary/foxylabV2/foxylabSynfo/.env",
+		"/B/gitLibrary/foxylabV2/foxylabSynfo/src/Controller/RegisterController.php",
+		"/B/gitLibrary/foxylabV2/foxylabSynfo/src/Entity/User.php",
+		"/B/gitLibrary/foxylabV2/foxylabSynfo/config/packages/api_platform.yaml",
+		"/B/gitLibrary/foxylabV2/foxylabSynfo/src/Repository/UserRepository.php",
+		"/C/Users/lokki/AppData/LocalLow/Emiliana_vt/VSeeFace/output.txt",
+		"/C/Users/lokki/AppData/LocalLow/Emiliana_vt/VSeeFace/error.txt",
+		"/C/Users/lokki/AppData/LocalLow/Emiliana_vt/VSeeFace/log-output.txt",
+		"/B/gitLibrary/foxylab/composer.json",
+		"/B/gitLibrary/foxylab/src/Entity/User.php",
+		"/B/gitLibrary/foxylab/src/Entity/Post.php",
+		"/B/gitLibrary/foxylab/.env",
+		"/B/gitLibrary/foxylab/templates/victorious/index.html.twig",
+		"/B/gitLibrary/foxylab/src/Controller/VictoriousController.php",
+		"/C/Users/lokki/Downloads/Ghostwind-master/LICENSE",
+		"/B/gitLibrary/foxylab/.gitignore",
+		"/B/gitLibrary/foxylab/src/Controller/HomeController.php",
+		"/C/Users/lokki/Desktop/Nouveau document texte.txt",
+		"/B/teraLibrary/postgres/data/postgresql.conf",
+		"/C/Users/lokki/.oh-my-zsh/oh-my-zsh.sh",
+		"/B/teraLibrary/postgres/data/postgresql.auto.conf",
+		"/C/Users/lokki/Downloads/id_ed25519.pub",
+		"/B/teraLibrary/xampp/htdocs/cuisine/templates/base.html.twig",
+		"/B/teraLibrary/xampp/htdocs/cuisine/templates/orange_elephant/index.html.twig",
+		"/C/Users/lokki/Downloads/add.png",
+		"/C/Users/lokki/Downloads/minus.png",
+		"/B/teraLibrary/xampp/htdocs/cuisine/src/Form/OrangeGnomeType.php",
+		"/B/teraLibrary/xampp/htdocs/cuisine/src/Form/OrangeIngredientType.php",
+		"/B/teraLibrary/xampp/htdocs/cuisine/src/Entity/Recipes.php",
+		"/B/teraLibrary/xampp/htdocs/cuisine/src/Entity/RecipiceIngredient.php",
+		"/C/Users/lokki/Downloads/téléchargé",
+		"/B/teraLibrary/xampp/htdocs/cuisine/templates/victorious_puppy/index.html.twig",
+		"/B/teraLibrary/xampp/htdocs/cuisine/src/Controller/Admin/RecipesCrudController.php",
+		"/B/teraLibrary/xampp/htdocs/cuisine/src/Controller/VictoriousPuppyController.php",
+		"/B/teraLibrary/xampp/htdocs/cuisine/src/Controller/Admin/DashboardController.php",
+		"/B/teraLibrary/xampp/htdocs/cuisine/public/css/pizza.css",
+		"/C/Users/lokki/AppData/Roaming/Sublime Text 3/Installed Packages/PHPIntel.sublime-package",
+		"/B/teraLibrary/xampp/htdocs/cuisine/src/Controller/HomeController.php",
+		"/B/teraLibrary/xampp/htdocs/cuisine/.env",
+		"/B/teraLibrary/xampp/htdocs/cuisine/templates/home/index.html.twig",
+		"/B/teraLibrary/xampp/htdocs/cuisine/public/css/styles.css",
+		"/B/teralibrary/xampp/apache/conf/extra/httpd-xampp.conf",
+		"/B/teralibrary/xampp/phpMyAdmin/config.inc.php",
+		"/B/teralibrary/xampp/apache/conf/httpd.conf",
+		"/B/teralibrary/xampp/apache/logs/access.log",
+		"/B/teraLibrary/xampp/htdocs/cuisine/Ghostwind-master/index.html",
+		"/B/teralibrary/xampp/apache/conf/extra/httpd-ssl.conf",
+		"/C/Users/lokki/Desktop/web/react/mon-app/src/Demarrer.js",
+		"/C/Users/lokki/Desktop/web/react/mon-app/public/index.html",
+		"/C/Users/lokki/Desktop/web/react/mon-app/package.json",
+		"/C/Users/lokki/Desktop/web/react/product-hunt/package.json",
+		"/C/Users/lokki/Desktop/untitled-Sphere.gcode",
+		"/C/Users/lokki/Desktop/web/react/mon-app/src/App.js",
+		"/C/Users/lokki/Downloads/Marlin-2.0.x/Marlin/Configuration.h",
+		"/C/Users/lokki/Desktop/sandbox/private/database_functions.php",
+		"/B/gitLibrary/test/package.json",
+		"/B/gitLibrary/test/.gitignore",
+		"/C/Users/lokki/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/lokki/AppData/Roaming/Sublime Text 3/Installed Packages/BracketHighlighter.sublime-package",
+		"/B/gitLibrary/test/credit.html",
+		"/C/Users/lokki/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/C/Users/lokki/AppData/Roaming/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
+		"/B/gitLibrary/test/script/script.js",
+		"/C/Users/lokki/AppData/Roaming/Sublime Text 3/Installed Packages/npm.sublime-package",
+		"/C/Users/lokki/AppData/Roaming/Sublime Text 3/Installed Packages/Bash Build System.sublime-package",
+		"/B/gitLibrary/test/tailwind.config.js",
+		"/C/Users/lokki/Downloads/truc.js",
+		"/C/Users/lokki/Downloads/test.js",
+		"/C/Users/lokki/AppData/Roaming/Sublime Text 3/Packages/User/SASS1.sublime-build",
+		"/C/Users/lokki/AppData/Roaming/Sublime Text 3/Packages/User/SublimeOnSaveBuild.sublime-settings",
+		"/C/Users/lokki/AppData/Roaming/Sublime Text 3/Packages/User/javaScript.sublime-build",
+		"/B/gitLibrary/test/style/Style.css",
+		"/B/gitLibrary/test/listFilaments.json",
+		"/B/gitLibrary/test/style/preStyle.css",
+		"/C/Users/lokki/AppData/Roaming/Sublime Text 3/Packages/npm/npm.sublime-settings",
+		"/B/gitLibrary/bot/bot/readme.md",
+		"/C/Windows/System/Speech/xml.xsd",
+		"/C/Windows/System/Speech/speech-synthesis.xsd",
+		"/B/gitLibrary/test/script/jquerry.js",
+		"/B/gitLibrary/test/script",
+		"/C/Users/lokki/Downloads/csvjson.json",
+		"/C/Users/lokki/Downloads/csvjson (1).json",
+		"/B/gitLibrary/test/style/tailwind.scss",
+		"/B/gitLibrary/test/style/mainStyle.css",
+		"/C/Users/lokki/AppData/Roaming/Sublime Merge/Packages/User/Commit Message.sublime-settings",
+		"/B/gitLibrary/test/test.php",
+		"/B/gitLibrary/test/testweb.sublime-project",
+		"/B/teraLibrary/xampp/htdocs/Toons/test.js",
+		"/C/Users/lokki/.eslintrc.js",
+		"/B/teraLibrary/xampp/htdocs/Toons/package.json",
+		"/B/teraLibrary/xampp/htdocs/Toons/style.css",
+		"/C/Users/lokki/Desktop/web/test sublim/test.js",
+		"/C/Users/lokki/Downloads/ft_iterative_factorial.c",
+		"/B/teraLibrary/xampp/htdocs/Toons/prout.html",
+		"/B/teraLibrary/xampp/htdocs/Toons/magicsysteme"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 134.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "README.md",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 462,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 62.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/javaScript.sublime-build",
+	"project": "README.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 228.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,38 @@
+Objets :
+	- livre
+	- utilisateur
+	- auteur
+
+Attributs :
+	livre : 
+		- titre (chaine de caratères, unique)
+		- image 
+		- date de parution
+		- description (chaine de caratères)
+		- auteur (chaine de caratères)
+		- genre (enum)
+		- isbn (optionel, unique)
+		- date d emprunt
+		- édition (chaine de caratères, optionel)
+	utilisateur :
+		- nom (chaine de caratères)
+		- nom de famille (chaine de caratères)
+		- status
+	auteur :
+		- nom (chaine de caratères)
+		- nom de famille (chaine de caratères)
+		- date de naissance
+		- date de mort
+		- courant 
+
+Utilisateur :
+	- employer
+	- habitant
+	- inscrit
+
+Fonction :
+	- les inscrit peuvent emprunter des livres
+	- les employer peuvent ajouté des livres
+
+Contrainte :
+	- un livre peut être emprunter qu'une seul fois 
