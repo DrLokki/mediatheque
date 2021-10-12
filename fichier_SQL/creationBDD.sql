@@ -19,7 +19,7 @@ CREATE TABLE Users(
 	last_name VARCHAR(128) NOT NULL,
 	role roleOf,
 	loan_number INT NOT NULL CHECK (loan_number <= 10) DEFAULT 0,
-	email VARCHAR(64) NOT NULL,
+	email VARCHAR(64) NOT NULL UNIQUE,
 	birth_date TIMESTAMP NOT NULL,
 	adresse TEXT NOT NULL,
 	mdp VARCHAR(256) NOT NULL,
@@ -37,7 +37,7 @@ CREATE TABLE Author(
 
 CREATE TABLE Book(
 	title VARCHAR(256) UNIQUE NOT NULL PRIMARY KEY,
-	image BYTEA NOT NULL,
+	image VARCHAR NOT NULL,
 	release_date TIMESTAMP NOT NULL,
 	descrition TEXT NOT NULL,
 	author VARCHAR(64) NOT NULL,
