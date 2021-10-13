@@ -1,0 +1,1 @@
+<aside id="social network" class="overflow-scroll mt-12 h-96 min-w-min hidden sm:block w-60 lg:w-80 mx-2 border-2 border-black"><a class="twitter-timeline" href="https://twitter.com/laBnF?ref_src=twsrc%5Etfw">Tweets by laBnF</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></aside>
