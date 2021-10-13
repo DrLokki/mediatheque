@@ -42,9 +42,12 @@ class RepositoryUsers extends crendital
 		$statement->setFetchMode(\PDO::FETCH_CLASS, Users::class);
 		if ($statement->execute()) {
 			$user = $statement->fetch();
-			if (\password_verify($mdp, $user->getPassword())) {
-				return $user;
+			if ($user) {
+				if (\password_verify($mdp, $user->getPassword())) {
+					return $user;
+				}
 			}
+			
 			return false;
 		}
 	}
