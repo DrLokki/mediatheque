@@ -34,7 +34,7 @@ class Book
 
 	public function setTitle($title)
 	{
-		$this->title = $title;
+		$this->title = htmlspecialchars($title);
 		return $this;
 	}
 
@@ -52,19 +52,19 @@ class Book
 
 	public function setDescription($description)
 	{
-		$this->description = $description;
+		$this->description = htmlspecialchars($description);
 		return $this;
 	}
 
 	public function setAuthor($author)
 	{
-		$this->author = $author;
+		$this->author = htmlspecialchars($author);
 		return $this;
 	}
 
 	public function setKind($kind)
 	{
-		$this->kind = $kind;
+		$this->kind = htmlspecialchars($kind);
 		return $this;
 	}
 
@@ -81,7 +81,7 @@ class Book
 	public function setIsbn($isbn)
 	{
 		if (isset($isbn)) {
-			$this->isbn = $isbn;
+			$this->isbn = htmlspecialchars($isbn);
 		}else{
 			$this->isbn = "";
 		}
@@ -98,7 +98,7 @@ class Book
 	public function setEdition($edition)
 	{
 		if (isset($edition)) {
-			$this->edition = $edition;
+			$this->edition = htmlspecialchars($edition);
 		}else{
 			$this->edition = "";
 		}

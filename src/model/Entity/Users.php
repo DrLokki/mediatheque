@@ -20,19 +20,19 @@ class Users
 
     public function setName($name)
     {
-    	$this->name = $name;
+    	$this->name = htmlspecialchars($name);
     	return $this;
     }
 
     public function setLastName($lName)
     {
-        $this->last_name = $lName;
+        $this->last_name = htmlspecialchars($lName);
         return $this;
     }
 
     public function setRole($role)
     {
-        $this->role = $role;
+        $this->role = htmlspecialchars($role);
         return $this;
     }
 
@@ -44,7 +44,7 @@ class Users
 
     public function setEmail($email)
     {
-        $this->email = $email;
+        $this->email = htmlspecialchars($email);
         return $this;
     }
 
@@ -56,7 +56,7 @@ class Users
 
     public function setAdress($adress)
     {
-        $this->adress = $adress;
+        $this->adress = htmlspecialchars($adress);
         return $this;
     }
 

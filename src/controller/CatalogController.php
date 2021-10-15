@@ -40,7 +40,7 @@ class CatalogController
     		if (strlen($book['descrition']) > 148) {
     			$book['descrition'] = substr($book['descrition'],0,strpos($book['descrition'],"."))."..";
     		}
-    		$book["tags"] = implode(",",json_decode($book["tags"]));
+    		$book["tags"] = htmlspecialchars(implode(",",json_decode($book["tags"])));
 			$content = $content." ".preg_replace($paterne,$book,$this->bookCard);
 			$content = preg_replace('%({{URLtitle}})%',urlencode($book['title']),$content);
 		}

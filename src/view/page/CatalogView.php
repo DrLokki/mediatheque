@@ -21,7 +21,7 @@
 		</nav>
 		<section class="flex justify-around mt-10">
 			<?php include 'view/component/twitter.php';?>
-			<div id="book" class="flex justify-around">
+			<div id="book" class="flex justify-around w-full">
 				{{books}}
 				<article></article>
 			</div>	
@@ -57,11 +57,11 @@
 			let uuid = {"title":title};
 			let init = {
 				method: 'POST',
-            	headers: headers,
-            	body : JSON.stringify(uuid)
+				headers: headers,
+				body : JSON.stringify(uuid)
 			};
 
-			fetch('/',init)
+			fetch('/catalogue',init)
 				.then((response) => {
 					console.log(response)
 					article.parentNode.removeChild(article);					
@@ -83,11 +83,11 @@
 			let uuid = {"page":page};
 			let init = {
 				method: 'POST',
-            	headers: headers,
-            	body : JSON.stringify(uuid)
+				headers: headers,
+				body : JSON.stringify(uuid)
 			};
 
-			fetch('/',init)
+			fetch('/catalogue',init)
 				.then((response) => {
 					console.log(response);
 					const data = response.text();
@@ -98,17 +98,18 @@
 					});
 				});
 		}
+
 		function prev() {
 			let headers = {"Content-type" : "application/json"};
 			page = (page-1) < 1 ? 1 : page-1
 			let uuid = {"page":page};
 			let init = {
 				method: 'POST',
-            	headers: headers,
-            	body : JSON.stringify(uuid)
+				headers: headers,
+				body : JSON.stringify(uuid)
 			};
 
-			fetch('/',init)
+			fetch('/catalogue',init)
 				.then((response) => {
 					console.log(response);
 					const data = response.text();
