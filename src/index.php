@@ -7,6 +7,7 @@ Autoloader::register();
 
 use Media\controller\HomeController;
 use Media\controller\PanelController;
+use Media\controller\CatalogController;
 use Media\model\Entity\Users;
 use Media\model\Repository\RepositoryUsers;
 
@@ -14,13 +15,20 @@ $home = new HomeController();
 $repository = new RepositoryUsers();
 $user = new Users();
 $panel = new PanelController();
-var_dump($_SESSION);
-// echo "<pre>";
-// var_dump($repository->findUnVerified());
-// echo '</pre>';
-// $home->index();
-$panel->index();
+$catalog = new CatalogController();
 
+// router
+switch ($_SERVER['REQUEST_URI']) {
+	case "/moncompte":
+		$panel->index();
+		break;
+	case "/catalogue":
+		$catalog->index();
+		break;
+	default:
+		$home->index();
+		break;
+}
 try {
 	if (isset($_POST["button"])) {
 		if ($_POST["button"] === "register") {
@@ -44,6 +52,7 @@ try {
 					$_SESSION['id'] = $user->getId();
 					$_SESSION['loan_number'] = $user->getLoanNumber();
 					$_SESSION['role'] = $user->getRole();
+					header('Location: '.$_SERVER['REQUEST_URI']);
 				}
 			}else
 			{
@@ -53,6 +62,7 @@ try {
 		}elseif ($_POST["button"] === "deconect") {
 			$_SESSION = [];
 			unset($_SESSION);
+    		header('Location: /catalog');
 		}
 	}
 } catch (Exception $e) {
