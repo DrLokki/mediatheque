@@ -9,8 +9,8 @@
 -- CREATE USER Ulna PASSWORD 'radius2';
 -- CREATE DATABASE media_db OWNER ulna;
 
-CREATE TYPE kindOf AS ENUM('poésie', 'roman', 'théatre', 'épistolaire', 'BD', 'comics', 'dvd', 'cd', 'vinyle', 'livre diver', 'revue');
-CREATE TYPE currentOf AS ENUM('humanisme', 'baroque', 'classicisme', 'lumières', 'romantisme', 'réalisme', 'naturalisme', 'symbolisme', 'surréalisme', 'absurde', 'pléiade');
+CREATE TYPE kindOf AS ENUM('po%C3%A9sie', 'roman', 'th%C3%A9atre', 'jeunesse', 'BD', 'comics', 'dvd', 'cd', 'vinyle', 'livre diver', 'revue');
+CREATE TYPE currentOf AS ENUM('humanisme', 'baroque', 'classicisme', 'lumi%C3%A8res', 'romantisme', 'r%C3%A9alisme', 'naturalisme', 'symbolisme', 'surr%C3%A9alisme', 'absurde', 'pl%C3%A9iade');
 CREATE TYPE roleOf AS ENUM('employer', 'inscrit', 'admin');
 
 CREATE TABLE Users(
@@ -42,13 +42,13 @@ CREATE TABLE Book(
 	descrition TEXT NOT NULL,
 	author VARCHAR(64) NOT NULL,
 	kind kindOf NOT NULL DEFAULT 'livre diver',
+	tags JSON,
 	isbn VARCHAR(64) UNIQUE,
 	loan_date TIMESTAMP,
 	edition VARCHAR(128),
 	borrower INT,
+	withdrawal BOOLEAN NOT NULL DEFAULT false,
 	CONSTRAINT fk_Users
 		FOREIGN KEY(borrower)
-			REFERENCES Users(id),
-		FOREIGN KEY(author)
-			REFERENCES Author(uuid)
+			REFERENCES Users(id)
 	);
