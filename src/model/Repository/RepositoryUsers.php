@@ -63,26 +63,30 @@ class RepositoryUsers extends crendital
 		}
 	}
 
-	public function findUnVerified()
+	public function findOneById(String $id)
 	{
-		$statement = $this->pdo->prepare('SELECT * FROM users WHERE is_verified=false');
+		$statement = $this->pdo->prepare('SELECT * FROM users WHERE id=:id');
+		$statement->bindValue(':id', $id, \PDO::PARAM_INT);
 		$statement->setFetchMode(\PDO::FETCH_CLASS, Users::class);
 		if ($statement->execute()) {
-			$users = $statement->fetchAll();
+			$user = $statement->fetch();
+			return $user;
+		}
+	}
+
+	public function findUnVerified()
+	{
+		$statement = $this->pdo->prepare('SELECT name,last_name,adresse,id FROM users WHERE is_verified=false');
+		if ($statement->execute()) {
+			$users = $statement->fetchAll(\PDO::FETCH_NUM);
 			return $users;
 		}
 	}
 
-	public function verified(String $name, Bool $bool=true, String $last_name="*")
+	public function verified(Int $id, Bool $bool=true)
 	{
-		if ($last_name === "*") {
-			$statement = $this->pdo->prepare('UPDATE users SET is_verified=:iv WHERE name=:name RETURNING *');
-		}
-		else {			
-			$statement = $this->pdo->prepare('UPDATE users SET is_verified=:iv WHERE name=:name AND last_name=:last_name RETURNING *');
-			$statement->bindValue(':last_name', $last_name, \PDO::PARAM_STR);
-		}
-		$statement->bindValue(':name', $name, \PDO::PARAM_STR);
+		$statement = $this->pdo->prepare('UPDATE users SET is_verified=:iv WHERE id=:id RETURNING *');
+		$statement->bindValue(':id', $id, \PDO::PARAM_INT);
 		$statement->bindValue(':iv', $bool, \PDO::PARAM_BOOL);
 		$statement->setFetchMode(\PDO::FETCH_CLASS, Users::class);
 		if ($statement->execute()) {
@@ -91,16 +95,10 @@ class RepositoryUsers extends crendital
 		}
 	}
 
-	public function addLoan(String $name, String $last_name="*")
+	public function addLoan(Int $id)
 	{
-		if ($last_name === "*") {
-			$statement = $this->pdo->prepare('UPDATE users SET loan_number=loan_number+1 WHERE name=:name RETURNING *');
-		}
-		else {
-			$statement = $this->pdo->prepare('UPDATE users SET loan_number=loan_number+1 WHERE name=:name AND last_name=:last_name RETURNING *');
-			$statement->bindValue(':last_name', $last_name, \PDO::PARAM_STR);
-		}
-		$statement->bindValue(':name', $name, \PDO::PARAM_STR);
+		$statement = $this->pdo->prepare('UPDATE users SET loan_number=loan_number+1 WHERE id=:id RETURNING *');
+		$statement->bindValue(':id', $id, \PDO::PARAM_STR);
 		$statement->setFetchMode(\PDO::FETCH_CLASS, Users::class);
 		if ($statement->execute()) {
 			$user = $statement->fetch();
@@ -108,16 +106,10 @@ class RepositoryUsers extends crendital
 		}
 	}
 
-	public function subLoan(String $name, String $last_name="*")
+	public function subLoan(Int $id)
 	{
-		if ($last_name === "*") {
-			$statement = $this->pdo->prepare('UPDATE users SET loan_number=loan_number-1 WHERE name=:name RETURNING *');	
-		}
-		else {
-			$statement = $this->pdo->prepare('UPDATE users SET loan_number=loan_number-1 WHERE name=:name AND last_name=:last_name RETURNING *');
-			$statement->bindValue(':last_name', $last_name, \PDO::PARAM_STR);			
-		}
-		$statement->bindValue(':name', $name, \PDO::PARAM_STR);
+		$statement = $this->pdo->prepare('UPDATE users SET loan_number=loan_number-1 WHERE id=:id RETURNING *');
+		$statement->bindValue(':id', $id, \PDO::PARAM_STR);
 		$statement->setFetchMode(\PDO::FETCH_CLASS, Users::class);
 		if ($statement->execute()) {
 			$user = $statement->fetch();
