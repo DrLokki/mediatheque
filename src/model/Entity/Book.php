@@ -22,6 +22,7 @@ class Book
 	private $borrower;
 	private $repository;
 	private bool $withdrawal;
+	private int $timestamp;
 
 	/**
 	 * Class Constructor 
@@ -117,6 +118,12 @@ class Book
 		return $this;
 	}
 
+	public function setTimeStamp($timestamp)
+	{
+		$this->timestamp = $timestamp;
+		return $this;
+	}
+
 	public function getTitle()
 	{
 		return $this->title;
@@ -175,5 +182,11 @@ class Book
 	public function getUserBorrower()
 	{
 		return $this->repository->findOneById($this->borrower);
+	}
+
+	public function getTimeStamp()
+	{
+		$this->timestamp = (int)$this->timestamp;;
+		return $this->timestamp;
 	}
 }

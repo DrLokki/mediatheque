@@ -65,7 +65,7 @@ class RepositoryUsers extends crendital
 
 	public function findOneById(String $id)
 	{
-		$statement = $this->pdo->prepare('SELECT * FROM users WHERE id=:id');
+		$statement = $this->pdo->prepare('SELECT *,extract(EPOCH FROM birth_date) as timestamp FROM users WHERE id=:id');
 		$statement->bindValue(':id', $id, \PDO::PARAM_INT);
 		$statement->setFetchMode(\PDO::FETCH_CLASS, Users::class);
 		if ($statement->execute()) {

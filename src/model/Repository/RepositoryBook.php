@@ -35,7 +35,7 @@ class RepositoryBook extends crendital
 	}
 
 	public function findAllByTitle(String $title, Int $page){
-		$statement = $this->pdo->prepare('SELECT title,image,descrition,author,tags,borrower FROM book WHERE title LIKE :title ORDER BY title LIMIT 2 OFFSET :start');
+		$statement = $this->pdo->prepare('SELECT title,image,descrition,author,tags,isbn,borrower FROM book WHERE title LIKE :title ORDER BY title LIMIT 2 OFFSET :start');
 		$statement->bindValue(':title', $title, \PDO::PARAM_STR);
 		$statement->bindValue(':start', 2*($page-1), \PDO::PARAM_INT);
 		if ($statement->execute()) {
@@ -47,7 +47,7 @@ class RepositoryBook extends crendital
 
 	public function getAll(Int $page)
 	{
-		$statement = $this->pdo->prepare('SELECT title,image,descrition,author,tags,borrower FROM book ORDER BY title LIMIT 2 OFFSET :start');
+		$statement = $this->pdo->prepare('SELECT title,image,descrition,author,tags,borrower,isbn FROM book ORDER BY title LIMIT 2 OFFSET :start');
 		$statement->bindValue(':start', 2*($page-1), \PDO::PARAM_INT);
 		if ($statement->execute()) {
 			$book = $statement->fetchAll(\PDO::FETCH_ASSOC);
@@ -57,7 +57,7 @@ class RepositoryBook extends crendital
 
 	public function getWithdrawal()
 	{
-		$statement = $this->pdo->prepare('SELECT title,author FROM book WHERE withdrawal=false AND borrower IS NOT NULL');
+		$statement = $this->pdo->prepare('SELECT title,author,EXTRACT(EPOCH FROM loan_date) as timestamp,borrower FROM book WHERE withdrawal=false AND borrower IS NOT NULL');
 		if ($statement->execute()) {
 			$book = $statement->fetchAll(\PDO::FETCH_ASSOC);
 			return $book;
@@ -75,7 +75,7 @@ class RepositoryBook extends crendital
 
 	public function getAdminBorrow()
 	{
-		$statement = $this->pdo->prepare('SELECT * FROM book WHERE borrower IS NOT NULL AND withdrawal=true ORDER BY loan_date');
+		$statement = $this->pdo->prepare('SELECT *, EXTRACT(EPOCH FROM loan_date) AS timestamp FROM book WHERE borrower IS NOT NULL AND withdrawal=true ORDER BY loan_date');
 		$statement->setFetchMode(\PDO::FETCH_CLASS, Book::class);
 		if ($statement->execute()) {
 			$book = $statement->fetchAll();
@@ -85,7 +85,7 @@ class RepositoryBook extends crendital
 
 	public function getBorrow(int $id)
 	{
-		$statement = $this->pdo->prepare('SELECT * FROM book WHERE borrower=:id AND withdrawal=true ORDER BY loan_date');
+		$statement = $this->pdo->prepare('SELECT *, EXTRACT(EPOCH FROM loan_date) AS timestamp FROM book WHERE borrower=:id AND withdrawal=true ORDER BY loan_date');
 		$statement->bindValue(':id',$id,\PDO::PARAM_STR);
 		$statement->setFetchMode(\PDO::FETCH_CLASS, Book::class);
 		if ($statement->execute()) {
