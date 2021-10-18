@@ -50,7 +50,7 @@
 			<label class="font-semibold text-xs" for="edition">édition</label>
 			<input class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 focus:outline-none focus:ring-2" name="edition" type="text" pattern="[A-Za-zéèàçùïöôûîëœ0-9\-\s']+">
 			<label class="font-semibold text-xs" for="tags">tags</label>
-			<input class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 focus:outline-none focus:ring-2" name="tags" type="text" pattern='^\["[A-Za-zéèàçùïöôûîëœ]+"(,"[A-Za-zéèàçùïöôûîëœ]+")*\]$'>
+			<input class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 focus:outline-none focus:ring-2" name="tags" type="text" pattern='^"[A-Za-zéèàçùïöôûîëœ]+"(,"[A-Za-zéèàçùïöôûîëœ]+")*$'>
 			<button class="flex items-center justify-center h-12 px-6 w-64 bg-blue-600 mt-8 rounded font-semibold text-sm text-blue-100 hover:bg-blue-700" required name="button" type="submit" value="addBook">Ajouter</button>
 		</form>
 	</div>

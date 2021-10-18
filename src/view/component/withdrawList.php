@@ -4,5 +4,6 @@
 		<br>
 		<span class="text-center text-sm underline">{{author}}</span>
 	</span>
-	<button id="{{URLtitle}}" value='{{URLtitle}}' onclick="withdrawalValide('{{URLtitle}}')" class="hover:bg-purple-300">valider</button>
+	<button id="{{URLtitle}}" value='{{URLtitle}}' onclick="withdrawalValide('{{URLtitle}}')" class="hover:bg-purple-300 {{specialClass}}">valider</button>
+	{{specialBalise}}
 </li>
