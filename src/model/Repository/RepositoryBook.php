@@ -35,7 +35,7 @@ class RepositoryBook extends crendital
 	}
 
 	public function findAllByTitle(String $title, Int $page){
-		$statement = $this->pdo->prepare('SELECT * FROM book WHERE title LIKE :title LIMIT 2 OFFSET :start');
+		$statement = $this->pdo->prepare('SELECT title,image,descrition,author,tags,borrower FROM book WHERE title LIKE :title LIMIT 2 OFFSET :start');
 		$statement->bindValue(':title', $title, \PDO::PARAM_STR);
 		$statement->bindValue(':start', 2*($page-1), \PDO::PARAM_INT);
 		if ($statement->execute()) {
@@ -47,7 +47,7 @@ class RepositoryBook extends crendital
 
 	public function getAll(Int $page)
 	{
-		$statement = $this->pdo->prepare('SELECT title,image,descrition,author,tags FROM book WHERE borrower IS NULL ORDER BY title LIMIT 2 OFFSET :start');
+		$statement = $this->pdo->prepare('SELECT title,image,descrition,author,tags,borrower FROM book ORDER BY title LIMIT 2 OFFSET :start');
 		$statement->bindValue(':start', 2*($page-1), \PDO::PARAM_INT);
 		if ($statement->execute()) {
 			$book = $statement->fetchAll(\PDO::FETCH_ASSOC);
@@ -96,7 +96,7 @@ class RepositoryBook extends crendital
 
 	public function setBorrow(int $id, String $title)
 	{
-		$statement = $this->pdo->prepare('UPDATE book SET borrower=:id,loan_date=CURRENT_DATE FROM users WHERE title=:title AND users.loan_date<10 AND users.id=:id');
+		$statement = $this->pdo->prepare('UPDATE book SET borrower=:id,loan_date=CURRENT_DATE FROM users WHERE title=:title AND users.loan_number<10 AND users.id=:id');
 		$statement->bindValue(':id',$id,\PDO::PARAM_INT);
 		$statement->bindValue(':title',$title,\PDO::PARAM_STR);
 		$statement->setFetchMode(\PDO::FETCH_CLASS, Book::class);

@@ -7,10 +7,13 @@ use Media\model\Entity\Book;
 
 function dontBorrow($buffer)
 {
-	if(isset($_SESSION['id'])){
+	if(!isset($_SESSION['id'])){
+		$buffer = str_replace('class="p-2 leading-none rounded font-medium bg-gray-400 text-xs uppercase"', 'class="p-2 leading-none rounded font-medium cursor-not-allowed bg-yellow-400 line-through text-xs uppercase"', $buffer);
 		return (str_replace("borrow('{{URLtitle}}')", "", $buffer));
+	}else{
+		return $buffer;
 	}
-	return $buffer;
+	
 }
 
 class CatalogController
@@ -52,8 +55,22 @@ class CatalogController
 				$book['descrition'] = substr($book['descrition'],0,strpos($book['descrition'],"."))."..";
 			}
 			$book["tags"] = htmlspecialchars(implode(",",json_decode($book["tags"])));
-			$content = $content." ".preg_replace($paterne,$book,$this->bookCard);
+			if (isset($book["borrower"])) {
+				$content = $content." ".preg_replace_callback(
+					'%(<button id="borrow" class=")(.+)(" .+>)Emprunter(<\/button>)%',
+					function ($matches) {
+						return $matches[1]."font-bold rounded font-medium cursor-not-allowed py-1 px-2 text-left bg-red-500".$matches[3]."indisponible".$matches[4];
+					},
+					$this->bookCard
+				);
+				$content = preg_replace($paterne,$book,$content);
+			}else {
+				$content = $content." ".preg_replace($paterne,$book,$this->bookCard);
+			}
 			$content = preg_replace('%({{URLtitle}})%',urlencode($book['title']),$content);
+
+			
+			
 		}
 		return $content;
 

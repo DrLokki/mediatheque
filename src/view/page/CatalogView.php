@@ -61,7 +61,7 @@
 						updateCatalog(text);
 					})
 										
-				})
+				});
 		}
 
 		function revelLogin(){
