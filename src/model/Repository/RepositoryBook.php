@@ -35,7 +35,7 @@ class RepositoryBook extends crendital
 	}
 
 	public function findAllByTitle(String $title, Int $page){
-		$statement = $this->pdo->prepare('SELECT title,image,descrition,author,tags,borrower FROM book WHERE title LIKE :title LIMIT 2 OFFSET :start');
+		$statement = $this->pdo->prepare('SELECT title,image,descrition,author,tags,borrower FROM book WHERE title LIKE :title ORDER BY title LIMIT 2 OFFSET :start');
 		$statement->bindValue(':title', $title, \PDO::PARAM_STR);
 		$statement->bindValue(':start', 2*($page-1), \PDO::PARAM_INT);
 		if ($statement->execute()) {
@@ -73,7 +73,7 @@ class RepositoryBook extends crendital
 		$statement->execute();
 	}
 
-	public function getAdminBorrow(int $id)
+	public function getAdminBorrow()
 	{
 		$statement = $this->pdo->prepare('SELECT * FROM book WHERE borrower IS NOT NULL AND withdrawal=true ORDER BY loan_date');
 		$statement->setFetchMode(\PDO::FETCH_CLASS, Book::class);
@@ -119,7 +119,7 @@ class RepositoryBook extends crendital
 
 	public function getCount()
 	{
-		$statement = $this->pdo->prepare('SELECT COUNT(*) FROM book WHERE borrower IS NULL');
+		$statement = $this->pdo->prepare('SELECT COUNT(*) FROM book');
 		if ($statement->execute()) {
 			$book = $statement->fetch(\PDO::FETCH_NUM);
 			return $book[0];

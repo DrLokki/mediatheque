@@ -71,7 +71,7 @@ class Book
 	public function setTags($tags)
 	{
 		if (isset($tags)) {
-			$this->tags = $tags;
+			$this->tags = explode(",",$tags);
 		}else{
 			$this->tags = "";
 		}
@@ -172,7 +172,7 @@ class Book
 		return $this->borrower;
 	}
 
-	public function getUserBorrwer()
+	public function getUserBorrower()
 	{
 		return $this->repository->findOneById($this->borrower);
 	}
