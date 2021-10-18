@@ -42,7 +42,7 @@ class CatalogController
 
 	public function generatePage($page=1,$filter="")
 	{
-		$paterne = ['%({{title}})%','%({{image}})%','%({{descrition}})%','%({{author}})%','%({{tags}})%'];
+		$paterne = ['%({{title}})%','%({{image}})%','%({{descrition}})%','%({{author}})%','%({{tags}})%','%({{isbn}})%'];
 		if ($filter !== "") {
 			$bookList = $this->repository->findAllByTitle($filter,$page);
 		}else {

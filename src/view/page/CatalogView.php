@@ -78,8 +78,8 @@
 			Rmodal.style.display = 'flex';
 		}
 
-		function borrow(title) {
-			const article = document.getElementById(title);
+		function borrow(title,isbn) {
+			const buttonArticle = document.querySelector(".b"+isbn);
 			const headers = {"Content-type" : "application/json"};
 			const uuid = {"title":title};
 			const init = {
@@ -94,11 +94,11 @@
 
 					data.then((jsonData) => {
 						if (jsonData.bool){
-							article.parentNode.removeChild(article);
+							buttonArticle.className += 'cursor-not-allowed line-through';
 						}
 						console.log(jsonData);
 					})
-										
+									
 				})
 		}
 

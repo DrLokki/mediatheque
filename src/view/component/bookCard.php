@@ -6,7 +6,7 @@
 		<p class="text-base underline my-1">{{author}}</p>
 		<p class="text-sm">{{descrition}}</p>
 		<span class="flex justify-around items-center mt-3 w-full">
-			<button id="borrow" class="p-2 leading-none rounded font-medium bg-gray-400 text-xs uppercase" onclick="borrow('{{URLtitle}}')">Emprunter</button>
+			<button id="borrow" class="b{{isbn}} p-2 leading-none rounded font-medium bg-gray-400 text-xs uppercase" onclick="borrow('{{URLtitle}}','{{isbn}}')">Emprunter</button>
 			<span class="text-xs text-right">{{tags}}</span>
 		</span>		
 	</div>
