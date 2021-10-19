@@ -1,7 +1,7 @@
 <?php 
 namespace Media\controller;
 
-use Media\model\Repository\RepositoryUsers;
+use Media\model\Repository\RepositoryBook;
 use Media\model\Entity\Users;
 
 function check($buffer)
@@ -27,14 +27,19 @@ class HomeController
     {
     	ob_start();
     	include 'view/page/HomeView.php';
-    	$this->ob = check(ob_get_contents());
+    	$this->view = check(ob_get_contents());
     	ob_end_clean();
-
+    	$this->repository = new RepositoryBook;
     }
 
 	public function index()
     {
-    	echo $this->ob;
+    	$paterne = ['%({{image0}})%','%({{image1}})%','%({{image2}})%','%({{image3}})%'];
+    	$lastImageBook = $this->repository->getLast();
+    	for ($i = 0; $i <= 3; $i++) {
+    		$this->view = preg_replace($paterne[$i], $lastImageBook[$i][0], $this->view);
+    	}
+    	echo $this->view;
 	}
 }
 ?>

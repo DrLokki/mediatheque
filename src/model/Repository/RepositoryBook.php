@@ -109,10 +109,9 @@ class RepositoryBook extends crendital
 
 	public function getLast()
 	{
-		$statement = $this->pdo->prepare('SELECT * FROM book LIMIT 6');
-		$statement->setFetchMode(\PDO::FETCH_CLASS, Book::class);
+		$statement = $this->pdo->prepare('SELECT image FROM book ORDER BY release_date LIMIT 4 ');
 		if ($statement->execute()) {
-			$book = $statement->fetch();
+			$book = $statement->fetchAll(\PDO::FETCH_NUM);
 			return $book;
 		}
 	}
