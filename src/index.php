@@ -8,22 +8,26 @@ Autoloader::register();
 use Media\controller\HomeController;
 use Media\controller\PanelController;
 use Media\controller\CatalogController;
+use Media\controller\BookController;
 use Media\model\Entity\Users;
 use Media\model\Repository\RepositoryUsers;
 
 $home = new HomeController();
+$book = new BookController();
 $repository = new RepositoryUsers();
 $user = new Users();
 $panel = new PanelController();
 $catalog = new CatalogController();
-
 // router
-switch ($_SERVER['REQUEST_URI']) {
+switch ($_SERVER['PATH_INFO']) {
 	case "/moncompte":
 		$panel->index();
 		break;
 	case "/catalogue":
 		$catalog->index();
+		break;
+	case "/livre":
+		$book->index();
 		break;
 	default:
 		$home->index();
@@ -62,7 +66,7 @@ try {
 		}elseif ($_POST["button"] === "deconect") {
 			$_SESSION = [];
 			unset($_SESSION);
-    		header('Location: /catalog');
+    		header('Location: '.$_SERVER['REQUEST_URI']);
 		}
 	}
 } catch (Exception $e) {

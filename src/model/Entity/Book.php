@@ -12,7 +12,7 @@ class Book
 	private String $title;
 	private String $image;
 	private String $release_date;
-	private String $description;
+	private String $descrition;
 	private String $author;
 	private String $kind;
 	private String $tags;
@@ -53,7 +53,7 @@ class Book
 
 	public function setDescription($description)
 	{
-		$this->description = htmlspecialchars($description);
+		$this->descrition = htmlspecialchars($description);
 		return $this;
 	}
 
@@ -141,7 +141,7 @@ class Book
 
 	public function getDescription()
 	{
-		return $this->description;
+		return $this->descrition;
 	}
 
 	public function getAuthor()
