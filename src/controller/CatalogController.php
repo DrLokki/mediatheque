@@ -8,7 +8,7 @@ use Media\model\Entity\Book;
 function dontBorrow($buffer)
 {
 	if(!isset($_SESSION['id'])){
-		$buffer = str_replace('class="p-2 leading-none rounded font-medium bg-gray-400 text-xs uppercase"', 'class="p-2 leading-none rounded font-medium cursor-not-allowed bg-yellow-400 line-through text-xs uppercase"', $buffer);
+		$buffer = str_replace('class="b{{isbn}} p-2 leading-none rounded font-medium bg-gray-400 text-xs uppercase"', 'class="p-2 leading-none rounded font-medium cursor-not-allowed bg-yellow-400 line-through text-xs uppercase"', $buffer);
 		return (str_replace("borrow('{{URLtitle}}')", "", $buffer));
 	}else{
 		return $buffer;

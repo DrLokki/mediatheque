@@ -34,23 +34,6 @@ class BookController
 
 	public function index()
 	{
-		// $paterne = [,'%({{image1}})%','%({{image2}})%','%({{image3}})%'];
-   //  	$lastImageBook = $this->repository->getLast();
-   //  	for ($i = 0; $i <= 3; $i++) {
-   //  		$this->view = preg_replace($paterne[$i], $lastImageBook[$i][0], $this->view);
-   //  	}
-		// if (isset($book["borrower"])) {
-			// 	$content = $content." ".preg_replace_callback(
-			// 		'%(<button id="borrow" class=")(.+)(" .+>)Emprunter(<\/button>)%',
-			// 		function ($matches) {
-			// 			return $matches[1]."font-bold rounded font-medium cursor-not-allowed py-1 px-2 text-left bg-red-500".$matches[3]."indisponible".$matches[4];
-			// 		},
-			// 		$this->bookCard
-			// 	);
-			// 	$content = preg_replace($paterne,$book,$content);
-			// }else {
-			// 	$content = $content." ".preg_replace($paterne,$book,$this->bookCard);
-			// }
 		try{
 			if (isset($_GET['title'])) {
 				$book = $this->repository->findOneByTitle(urldecode($_GET['title']));
@@ -66,7 +49,6 @@ class BookController
 				$this->view = preg_replace('%({{isbn}})%', $book->getIsbn(), $this->view);
 				$this->view = preg_replace('%({{URLtitle}})%', urlencode($book->getTitle()), $this->view);
 				$disponibilityDate = new \DateTime($book->getLoan_date());
-				var_dump($book->getLoan_date());
 				$disponibilityDate->modify("+21 day");
 				$this->view = preg_replace('%({{disponibility}})%',$disponibilityDate->format('j F, Y') , $this->view);
 				if ($book->getBorrower() > 0) {

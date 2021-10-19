@@ -35,9 +35,11 @@ class HomeController
 	public function index()
     {
     	$paterne = ['%({{image0}})%','%({{image1}})%','%({{image2}})%','%({{image3}})%'];
+    	$paterne2 = ['%({{URLtitle0}})%','%({{URLtitle1}})%','%({{URLtitle2}})%','%({{URLtitle3}})%'];
     	$lastImageBook = $this->repository->getLast();
     	for ($i = 0; $i <= 3; $i++) {
     		$this->view = preg_replace($paterne[$i], $lastImageBook[$i][0], $this->view);
+    		$this->view = preg_replace($paterne2[$i], urlencode($lastImageBook[$i][1]), $this->view);
     	}
     	echo $this->view;
 	}

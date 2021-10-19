@@ -16,7 +16,7 @@
 			include 'view/component/registerModal.php';
 		?>
 		<section class="flex justify-around mt-10 ">
-			<article class="mx-2 p-2 flex flex-wrap sm:flex-nowrap">
+			<article class="mx-2 p-2 justify-around w-full flex flex-wrap sm:flex-nowrap">
 				<img src="{{image}}" alt="" class="shadow-sm">
 				<div class="mx-4 leading-relaxed">
 					<h3 class="text-center underline text-2xl font-extrabold">{{title}}</h3>

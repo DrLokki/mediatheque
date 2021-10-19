@@ -45,6 +45,17 @@ class RepositoryBook extends crendital
 
 	}
 
+	public function findOneByTitle(String $title){
+		$statement = $this->pdo->prepare('SELECT *,EXTRACT(EPOCH FROM release_date) as release_date FROM book WHERE title LIKE :title');
+		$statement->bindValue(':title', $title, \PDO::PARAM_STR);
+		$statement->setFetchMode(\PDO::FETCH_CLASS, Book::class);
+		if ($statement->execute()) {
+			$book = $statement->fetch();
+			return $book;
+		}
+
+	}
+
 	public function getAll(Int $page)
 	{
 		$statement = $this->pdo->prepare('SELECT title,image,descrition,author,tags,borrower,isbn FROM book ORDER BY title LIMIT 2 OFFSET :start');
@@ -109,7 +120,7 @@ class RepositoryBook extends crendital
 
 	public function getLast()
 	{
-		$statement = $this->pdo->prepare('SELECT image FROM book ORDER BY release_date LIMIT 4 ');
+		$statement = $this->pdo->prepare('SELECT image,title FROM book ORDER BY release_date LIMIT 4 ');
 		if ($statement->execute()) {
 			$book = $statement->fetchAll(\PDO::FETCH_NUM);
 			return $book;

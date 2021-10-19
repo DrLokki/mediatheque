@@ -20,10 +20,10 @@
 			<article class="mx-2 p-2">
 				<h3 class="text-center text-2xl font-extrabold">Nouveauté</h3>
 				<div class="flex justify-center sm:justify-between flex-wrap">
-					<div class="w-4/5 sm:w-1/6 xl:max-w-xs min-w-min m-2"><a href="#" class=""><img src="{{image0}}" alt=""></a></div>
-					<div class="w-4/5 sm:w-1/6 xl:max-w-xs min-w-min m-2"><a href="#" class=""><img src="{{image1}}" alt=""></a></div>
-					<div class="w-4/5 sm:w-1/6 xl:max-w-xs min-w-min m-2"><a href="#" class=""><img src="{{image2}}" alt=""></a></div>
-					<div class="w-4/5 sm:w-1/6 xl:max-w-xs min-w-min m-2"><a href="#" class=""><img src="{{image3}}" alt=""></a></div>
+					<div class="w-4/5 sm:w-1/6 xl:max-w-xs min-w-min m-2"><a href="/livre?title={{URLtitle0}}" class=""><img src="{{image0}}" alt=""></a></div>
+					<div class="w-4/5 sm:w-1/6 xl:max-w-xs min-w-min m-2"><a href="/livre?title={{URLtitle1}}" class=""><img src="{{image1}}" alt=""></a></div>
+					<div class="w-4/5 sm:w-1/6 xl:max-w-xs min-w-min m-2"><a href="/livre?title={{URLtitle2}}" class=""><img src="{{image2}}" alt=""></a></div>
+					<div class="w-4/5 sm:w-1/6 xl:max-w-xs min-w-min m-2"><a href="/livre?title={{URLtitle3}}" class=""><img src="{{image3}}" alt=""></a></div>
 				</div>
 			</article>
 		</section>

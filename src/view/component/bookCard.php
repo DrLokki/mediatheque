@@ -1,6 +1,6 @@
 <!-- book -->
 <article id="{{URLtitle}}" class="book flex flex-col bg-gray-200 rounded-lg p-4 m-2 w-4/5 sm:w-2/6 xl:max-w-xs min-w-min">
-	<img src="{{image}}" alt="" class="bg-gray-400 rounded-lg">
+	<a href="/livre?title={{URLtitle}}" class=""><img src="{{image}}" alt="" class="bg-gray-400 rounded-lg"></a>
 	<div class="flex flex-col items-start mt-4">
 		<h4 class="text-lg font-semibold">{{title}}</h4>
 		<p class="text-base underline my-1">{{author}}</p>
