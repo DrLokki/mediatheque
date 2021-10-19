@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Atwritter;
+    src: local('Atwritter'), url(./fonts/atwritter.ttf) format('ttf');
+  }
+  @font-face {
+    font-family: KacstBook;
+    src: local('KacstBook'), url(./fonts/Kacst/KacstBook.ttf) format('ttf');
+  }
+}
+

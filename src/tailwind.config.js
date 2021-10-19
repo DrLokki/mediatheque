@@ -26,6 +26,11 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
+      eagleGreen: '#1A535C',
+      mediumTurquoise: '#4ECDC4',
+      mintCream: '#F7FFF7',
+      bittersweet: '#FF6B6B',
+      naplesYellow: '#FFE66D',
     },
     spacing: {
       px: '1px',
@@ -240,6 +245,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        'KacstBook',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',
@@ -255,7 +261,7 @@ module.exports = {
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"',
       ],
-      serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+      serif: ['Atwritter','ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: [
         'ui-monospace',
         'SFMono-Regular',
