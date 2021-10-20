@@ -35,6 +35,9 @@ class PanelController
 		ob_clean();
 		include 'view/component/withdrawList.php';
 		$this->withdrawList = ob_get_contents();
+		ob_clean();
+		include 'view/component/UserWithdrawList.php';
+		$this->UserWithdrawList = ob_get_contents();
 		ob_end_clean();
 		$this->book = new Book();
 		$this->repository = new RepositoryUsers();
@@ -105,7 +108,7 @@ class PanelController
 			$content = "";
 			$paterne = ['%({{title}})%','%({{author}})%'];
 			foreach ($withdrawBook as $book) {
-				$content = $content." ".preg_replace($paterne,$book,$this->withdrawList);
+				$content = $content." ".preg_replace($paterne,$book,$this->UserWithdrawList);
 				$content = preg_replace('%({{URLtitle}})%',urlencode($book['title']),$content);
 			}
 			$this->UPanel = preg_replace('%({{withdrawBook}})%',$content,$this->UPanel);
