@@ -1,4 +1,4 @@
-<li class="flex justify-around divide-x divide-yellow-500 {{EMPclass}}">
+<li class="flex justify-around divide-x divide-eagleGreen divide-dashed {{EMPclass}}">
 	<span class="">
 		<span class="text-center text-sm"><i>{{title}}</i></span>
 		<br>

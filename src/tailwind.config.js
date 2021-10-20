@@ -31,6 +31,8 @@ module.exports = {
       mintCream: '#F7FFF7',
       bittersweet: '#FF6B6B',
       naplesYellow: '#FFE66D',
+      lightCyan: '#DEF7F3',
+      vividSky: '#11C9EE',
     },
     spacing: {
       px: '1px',

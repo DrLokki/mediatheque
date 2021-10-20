@@ -18,7 +18,7 @@
 		<section class="flex justify-around mt-10 ">
 			<?php include 'view/component/twitter.php';?>
 			<article class="mx-2 p-2">
-				<h3 class="text-center text-2xl font-extrabold">Nouveauté</h3>
+				<h3 class="text-center text-2xl font-extrabold text-sans">Nouveauté</h3>
 				<div class="flex justify-center sm:justify-between flex-wrap">
 					<div class="w-4/5 sm:w-1/6 xl:max-w-xs min-w-min m-2"><a href="/livre?title={{URLtitle0}}" class=""><img src="{{image0}}" alt=""></a></div>
 					<div class="w-4/5 sm:w-1/6 xl:max-w-xs min-w-min m-2"><a href="/livre?title={{URLtitle1}}" class=""><img src="{{image1}}" alt=""></a></div>
@@ -28,7 +28,6 @@
 			</article>
 		</section>
 	</main>
-	<?php include 'view/component/footer.php';?>
 	<script>
 		// Get the modal
 		let modal = document.getElementById("modal login");

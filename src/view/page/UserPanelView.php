@@ -19,7 +19,6 @@
 			</article>
 		</section>
 	</main>
-	<?php include 'view/component/footer.php';?>
 	<script>
 		function unwithdrawal(title) {
 			let id = document.getElementById(title);

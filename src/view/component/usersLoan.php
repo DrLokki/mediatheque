@@ -1,19 +1,19 @@
 <aside id="loanList" class="overflow-scroll mt-12 h-96 min-w-min sm:block w-60 lg:w-80 mx-2 border-2 border-black">
 	<div class="tab">
-		<button class="tablinks bg-gray-200 active:bg-green-700 hover:bg-gray-300 px-4 py-2" onclick="openCity(event, 'loan')">Emprunt en cour</button>
-		<button class="tablinks bg-gray-200 active:bg-green-700 hover:bg-gray-300 px-4 py-2" onclick="openCity(event, 'withdrawal')">Livre a récupéré</button>
+		<button class="tablinks bg-mediumTurquoise hover:bg-eagleGreen px-4 py-2 mb-1" onclick="openCity(event, 'loan')">Emprunt en cour</button>
+		<button class="tablinks bg-mediumTurquoise hover:bg-eagleGreen px-4 py-2 mb-1" onclick="openCity(event, 'withdrawal')">Livre a récupéré</button>
 	</div>
 	<!-- Tab content -->
 	<div id="loan" class="tabcontent">
 		<h3>Emprunt en cour</h3>
-		<ul class="divide-y divide-yellow-500">
+		<ul class="divide-y divide-eagleGreen">
 			{{loan}}
 		</ul>
 	</div>
 	
 	<div id="withdrawal" class="tabcontent hidden">
 		<h3>Livre a récupéré</h3>
-		<ul class="divide-y divide-yellow-500">
+		<ul class="divide-y divide-eagleGreen">
 			{{withdrawBook}}
 		</ul>
 	</div>

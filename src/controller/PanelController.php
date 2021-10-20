@@ -63,7 +63,6 @@ class PanelController
 				$book["timestamp"] = (int)$book["timestamp"];
 				$difDate = time() - $book["timestamp"];
 				$difDate = ((int)date("j",$difDate));
-				var_dump(date("j",time()), date("j",$book["timestamp"]));
 				$content = $content." ".preg_replace($paterne,$book,$this->withdrawList);
 				if ($difDate > 3) {
 					$user = $this->repository->findOneById($book['borrower']);

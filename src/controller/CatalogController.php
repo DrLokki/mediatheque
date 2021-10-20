@@ -8,7 +8,7 @@ use Media\model\Entity\Book;
 function dontBorrow($buffer)
 {
 	if(!isset($_SESSION['id'])){
-		$buffer = str_replace('class="b{{isbn}} p-2 leading-none rounded font-medium bg-gray-400 text-xs uppercase"', 'class="p-2 leading-none rounded font-medium cursor-not-allowed bg-yellow-400 line-through text-xs uppercase"', $buffer);
+		$buffer = str_replace('class="b{{isbn}} p-2 leading-none rounded font-medium bg-mediumTurquoise text-xs uppercase"', 'class="p-2 leading-none rounded font-medium cursor-not-allowed bg-naplesYellow line-through text-xs uppercase"', $buffer);
 		return (str_replace("borrow('{{URLtitle}}')", "", $buffer));
 	}else{
 		return $buffer;
@@ -59,7 +59,7 @@ class CatalogController
 				$content = $content." ".preg_replace_callback(
 					'%(<button id="borrow" class=")(.+)(" .+>)Emprunter(<\/button>)%',
 					function ($matches) {
-						return $matches[1]."font-bold rounded font-medium cursor-not-allowed py-1 px-2 text-left bg-red-500".$matches[3]."indisponible".$matches[4];
+						return $matches[1]."font-bold rounded font-medium cursor-not-allowed py-1 px-2 text-left bg-bittersweet".$matches[3]."indisponible".$matches[4];
 					},
 					$this->bookCard
 				);

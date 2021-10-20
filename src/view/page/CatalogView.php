@@ -16,8 +16,8 @@
 			include 'view/component/registerModal.php';
 		?>
 		<nav class="flex items-center justify-center w-full border-b border-t border-black">
-			<input id="search" class="h-16 mr-8" type="text">
-			<button class="flex items-center h-16 mr-8" onClick="search()">Menu Item 2</button>
+			<input id="search" class="h-16 mr-8 bg-mediumTurquoise text-black" placeholder="titre" type="text">
+			<button class="flex items-center h-16 mr-8" onClick="search()">recherché</button>
 		</nav>
 		<section class="flex justify-around mt-10">
 			<?php include 'view/component/twitter.php';?>
@@ -26,8 +26,8 @@
 			</div>	
 		</section>
 		<nav class="flex items-center justify-center w-full mt-4 border-b border-t border-black">
-			<button class="bg-yellow-300 h-16 px-2" onClick="prev()"><<-précédente</button>
-			<button class="bg-yellow-300 h-16 px-2" onClick="next()">suivante->></button>
+			<button class="bg-eagleGreen text-mintCream h-16 px-2" onClick="prev()"><<-précédente</button>
+			<button class="bg-eagleGreen text-mintCream h-16 px-2" onClick="next()">suivante->></button>
 		</nav>
 	</main>
 	<script>

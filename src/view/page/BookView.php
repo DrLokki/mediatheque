@@ -20,19 +20,18 @@
 				<img src="{{image}}" alt="" class="shadow-sm">
 				<div class="mx-4 leading-relaxed">
 					<h3 class="text-center underline text-2xl font-extrabold">{{title}}</h3>
-					<div class="">autheur : {{author}}</div>
+					<div class="">autheur : <span class="underline">{{author}}</span></div>
 					<div class="">édition : {{edition}}</div>
 					<div class="">date de sortie : {{release}}</div>
-					<p class=""> description : {{description}}</p>
+					<p class=""> description : <span class="font-serif">{{description}}</span></p>
 					<div class="">type de document : {{kind}}</div>
 					<div class="text-opacity-90">genre : {{tags}}</div>
 					<button id="borrow" class="b{{isbn}} p-2 leading-none rounded font-medium bg-gray-400 text-xs uppercase {{Bclass}}" onclick="borrow('{{URLtitle}}','{{isbn}}')">Emprunter</button>
-					<div class="text-sm {{class}}">Ce livre est indisponible, le retour est prévue le {{disponibility}}</div>
+					<div class="text-sm {{class}}">Ce livre est indisponible, le retour est prévue le <b>{{disponibility}}</b></div>
 				</div>
 			</article>
 		</section>
 	</main>
-	<?php include 'view/component/footer.php';?>
 	<script>
 		// Get the modal
 		let modal = document.getElementById("modal login");
