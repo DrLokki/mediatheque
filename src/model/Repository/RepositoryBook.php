@@ -2,13 +2,12 @@
 
 namespace Media\model\Repository;
 
-use Media\crendital;
 use Media\model\Entity\Book;
 
 /**
  * summary
  */
-class RepositoryBook extends crendital
+class RepositoryBook
 {
 	/**
 	 * summary

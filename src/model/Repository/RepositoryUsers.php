@@ -2,13 +2,12 @@
 
 namespace Media\model\Repository;
 
-use Media\crendital;
 use Media\model\Entity\Users;
 
 /**
  * summary
  */
-class RepositoryUsers extends crendital
+class RepositoryUsers
 {
 
 	/**
