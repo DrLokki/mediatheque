@@ -9,6 +9,8 @@ use Media\model\Entity\Book;
  */
 class RepositoryBook
 {
+	private $dsn;
+	private $pdo;
 	/**
 	 * summary
 	 */

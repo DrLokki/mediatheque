@@ -10,6 +10,8 @@ use Media\model\Entity\Users;
 class RepositoryUsers
 {
 
+	private $dsn;
+	private $pdo;
 	/**
 	 * summary
 	 */
