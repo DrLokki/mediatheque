@@ -18,6 +18,7 @@ placer vous dans le dossier fichier_SQL
 
 crée et alimenter la base de donner postgres
 ```bash
+    sudo su postgres
     psql 
     \i creationUser.sql
     \q
@@ -48,7 +49,9 @@ Pour ajouter des employer faite les commande suivante pour utiliser l'utilitaire
     lua utility/emploCreator.lua
 ```
 
-référé vous au manuel d'utilisation pour créé un employer 
+suivie les instructions donner dans l'utilitaire pour la suite.
+
+
 ### utility dev link
 https://catalogue.bnf.fr/couverture?&appName=NE&idArk=ark:/12148/cb450989938&couverture=1
 
