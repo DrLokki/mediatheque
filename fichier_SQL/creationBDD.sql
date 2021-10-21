@@ -1,13 +1,9 @@
 -- DROP TABLE IF EXISTS Book;
 -- DROP TABLE IF EXISTS Author;
 -- DROP TABLE IF EXISTS Users;
--- DROP DATABASE IF EXISTS media_db;
--- DROP USER IF EXISTS Ulna;
 -- DROP TYPE IF EXISTS kindOf;
 -- DROP TYPE IF EXISTS currentOf;
 -- DROP TYPE IF EXISTS roleOf;
--- CREATE USER Ulna PASSWORD 'radius2';
--- CREATE DATABASE media_db OWNER ulna;
 
 CREATE TYPE kindOf AS ENUM('po%C3%A9sie', 'roman', 'th%C3%A9atre', 'jeunesse', 'BD', 'comics', 'dvd', 'cd', 'vinyle', 'livre diver', 'revue');
 CREATE TYPE currentOf AS ENUM('humanisme', 'baroque', 'classicisme', 'lumi%C3%A8res', 'romantisme', 'r%C3%A9alisme', 'naturalisme', 'symbolisme', 'surr%C3%A9alisme', 'absurde', 'pl%C3%A9iade');
