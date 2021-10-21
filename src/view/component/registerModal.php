@@ -15,7 +15,7 @@
 		<input class="flex items-center h-12 px-4 w-64 bg-lightCyan mt-2 focus:outline-none focus:ring-2" required autocomplete="new-password" name="password" type="password">
 		<label class="font-semibold text-xs" for="adress">Adresse</label>
 		<input class="flex items-center h-12 px-4 w-64 bg-lightCyan mt-2 focus:outline-none focus:ring-2" required autocomplete="street-address" name="adress" type="text">
-		<button class="flex items-center justify-center h-12 px-6 w-64 bg-eagleGreen mt-8 rounded font-semibold text-sm text-mintCream hover:text-vividSky" required name="button" type="submit" value="register">Ce connecter</button>
+		<button class="flex items-center justify-center h-12 px-6 w-64 bg-eagleGreen mt-8 rounded font-semibold text-sm text-mintCream hover:text-vividSky" required name="button" type="submit" value="register">S'inscrires</button>
 	</form>
 
 </div>

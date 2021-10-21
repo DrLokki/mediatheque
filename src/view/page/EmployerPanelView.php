@@ -31,7 +31,6 @@
 			</article>
 		</section>
 	</main>
-	<?php include 'view/component/footer.php';?>
 	<script>
 		// Get the modal
 		let modal = document.getElementById("modal login");
